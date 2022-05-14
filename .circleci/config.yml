@@ -21,5 +21,8 @@ jobs:
           command: |
             npm run backend:install
       - run:
-          name: Print Hello World Message
-          command: echo 'Hello World!'
+          name: Build The UI
+          command: npm run frontend:build
+      - run:
+          name: Build The Server
+          command: npm run backend:build
